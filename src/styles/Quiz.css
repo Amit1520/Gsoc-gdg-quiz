@@ -1,0 +1,118 @@
+/* Quiz Container */
+.quiz-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background: linear-gradient(135deg, #1a1a1a, #333);
+  box-shadow: 0px 4px 10px rgba(255, 223, 0, 0.3);
+  border-radius: 12px;
+  text-align: center;
+  color: white;
+
+  
+}
+
+/* Question Text */
+.quiz-container h2 {
+  font-size: 30px;
+  color: #ffdd00;
+  margin-bottom: 20px;
+}
+
+/* Answer Buttons */
+.option-btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 5px solid #ffdd00;
+  background-color: #222;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.option-btn:hover {
+  background-color: #ffdd00;
+  color: black;
+  transform: scale(1.05);
+}
+
+/* ✅ Selected Answer Effect */
+.option-btn.selected {
+  background-color: #ffdd00;
+  color: black;
+  border-color: #ffc107;
+}
+
+/* ✅ Correct Answer Effect After Submission */
+.option-btn.correct {
+  background-color: #28a745;
+  border-color: #1e7e34;
+  color: white;
+}
+
+/* ✅ Incorrect Answer Effect After Submission */
+.option-btn.incorrect {
+  background-color: #dc3545;
+  border-color: #a71d2a;
+  color: white;
+}
+
+/* Submit Button */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  background-color: #ffdd00;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.submit-btn:hover {
+  background-color: #ffcc00;
+  box-shadow: 0px 4px 10px rgba(255, 223, 0, 0.5);
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .quiz-container {
+      margin: 30px auto;
+      padding: 15px;
+  }
+
+  .option-btn, .submit-btn {
+      font-size: 16px;
+  }
+}
+.topic-btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 5px solid #ffdd00;
+  background-color: #222;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.topic-btn:hover {
+  background-color: #ffdd00;
+  color: black;
+  transform: scale(1.05);
+}
+

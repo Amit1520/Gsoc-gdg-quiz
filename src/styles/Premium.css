@@ -1,0 +1,47 @@
+.premium-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #121212;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.premium-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #f39c12; /* Gold color for premium feel */
+}
+
+.premium-container p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    max-width: 600px;
+}
+
+.buy-access-btn {
+    /* background: yellow;
+    color: #121212;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+     */
+     width: 350px;
+     background: #ffcc00;
+     color: #222;
+     box-shadow: 0px 4px 10px rgba(255, 204, 0, 0.4);
+}
+
+
+
+.buy-access-btn:hover {
+    transform: scale(1.08);
+    box-shadow: 0px 6px 15px rgba(255, 204, 0, 0.6);
+}
