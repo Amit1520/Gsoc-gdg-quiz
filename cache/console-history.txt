@@ -1,0 +1,15 @@
+console.log("EDU Balance:", ethers.formatUnits(balance, 18));
+const balance = await eduToken.balanceOf("0x6f2D4B6045515784c8A7ef29Cd50D6dC92e6dB30");
+console.log("EDU Balance:", ethers.formatUnits(balance, 18));
+await eduToken.mint("0x6f2D4B6045515784c8A7ef29Cd50D6dC92e6dB30", ethers.parseUnits("1000", 18));
+const eduToken = EduToken.attach("0x60E600285654cCFc24720A49933C2639B180beea");
+const EduToken = await ethers.getContractFactory("EduToken");
+clear
+quit
+exit
+const eduToken = EduToken.attach("0xc96db02C04CA071aA173E4a66C4fef57663f16Da"); // Your contract address
+const EduToken = await ethers.getContractFactory("EduToken");
+await eduToken.mint("0x6f2D4B6045515784c8A7ef29Cd50D6dC92e6dB30", ethers.parseUnits("1000", 18));
+const EduToken = await ethers.getContractFactory("EduToken");
+const eduToken = EduToken.attach("0xc96db02C04CA071aA173E4a66C4fef57663f16Da"); // Your 
+const EduToken = await ethers.getContractFactory("EduToken");
