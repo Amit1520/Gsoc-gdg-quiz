@@ -1,4 +1,4 @@
-.auth-container, .signin-page {
+/* .auth-container, .signin-page {
     text-align: center;
     margin: 40px auto;
     max-width: 400px;
@@ -53,4 +53,137 @@
   button:hover {
     background: #ff9900;
   }
-  
+   */
+
+   /* Reset styles */
+
+.auth-container, .signin-page {
+    text-align: center;
+    margin: 40px auto;
+    max-width: 400px;
+    background: #1e1e1e;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  }   
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+/* Background with stunning visuals */
+.signup-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:url("/public/Home.jpg") center/cover no-repeat;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Signup Box */
+.signup-box {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  text-align: center;
+  width: 350px;
+  animation: slideUp 1s ease-in-out;
+}
+
+/* Signup Title */
+.signup-title {
+  font-size: 2rem;
+  color: #f7f0f0;
+  margin-bottom: 10px;
+}
+
+/* Subtitle */
+.signup-subtitle {
+  font-size: 1.2rem;
+  color: #f3eeee;
+  margin-bottom: 20px;
+}
+
+/* Form Inputs */
+.input-field {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.2);
+  color: rgb(25, 24, 24);
+  transition: 0.3s ease-in-out;
+}
+
+.input-field::placeholder {
+  color: #ddd;
+}
+
+.input-field:focus {
+  background: rgba(255, 255, 255, 0.3);
+  outline: none;
+}
+
+/* Signup Button */
+.signup-button {
+  width: 100%;
+  padding: 12px;
+  background: #ff7a59;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.signup-button:hover {
+  background: #ff5733;
+}
+
+/* Login Link */
+.login-link {
+  margin-top: 15px;
+  font-size: 1rem;
+  color: #ddd;
+}
+
+.login-link span {
+  color: #ff7a59;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+}
+
+.login-link span:hover {
+  color: #ff5733;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
