@@ -38,13 +38,13 @@
 
 // export default SigninPage;
 
+
+
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import app from "../firebase";
 import "../styles/Signin.css"; // Common CSS
-// Optional: For better alerts
-//import { toast } from "react-hot-toast";
 
 const auth = getAuth(app);
 
@@ -56,18 +56,19 @@ const SigninPage = () => {
 
   const signinUser = () => {
     if (!email || !password) {
-      alert.error("Please fill all fields");
+      alert("Please fill all fields"); // ✅ changed from alert.error
       return;
     }
 
     setLoading(true);
     signInWithEmailAndPassword(auth, email, password)
       .then(() => {
-        alert.success("Sign in Successful");
-        navigate("/quiz");
+        alert("Sign in Successful"); // ✅ changed from alert.success
+        navigate("/dashboard");
       })
-      .catch(() => {
-        alert.error("Sign in Failed");
+      .catch((error) => {
+        console.error("Error signing in:", error);
+        alert("Sign in Failed"); // ✅ changed from alert.error
       })
       .finally(() => setLoading(false));
   };
@@ -109,4 +110,3 @@ const SigninPage = () => {
 };
 
 export default SigninPage;
-

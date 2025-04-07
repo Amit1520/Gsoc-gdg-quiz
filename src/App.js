@@ -7,6 +7,7 @@ import SigninPage from "./pages/Signin";
 import SignupPage from "./pages/Signup";
 import Leaderboard from "./pages/Leaderboard";
 import PremiumPage from "./pages/PremiumPage";
+import Dashboard from "./pages/Dashboard";
 import { BlockchainProvider } from "./context/blockchainContext"; // ✅ Import the blockchain provider
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/quiz" element={<Quiz />} />
           <Route path="/signin" element={<SigninPage />} />
           <Route path="/signup" element={<SignupPage />} />

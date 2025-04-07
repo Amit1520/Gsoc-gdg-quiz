@@ -78,6 +78,7 @@ const Quiz = () => {
   };
 
   return (
+    <div className="App">
     <div className="quiz-container">
       {user ? (
         !selectedTopic ? (
@@ -122,6 +123,7 @@ const Quiz = () => {
       ) : (
         <p>Please log in to take the quiz.</p>
       )}
+    </div>
     </div>
   );
 };

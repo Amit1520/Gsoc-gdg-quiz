@@ -130,7 +130,7 @@ const Signup = () => {
 
         <p className="login-link">
           Already have an account?{" "}
-          <span onClick={() => navigate("/login")}>Log in</span>
+          <span onClick={() => navigate("/Signin")}>Log in</span>
         </p>
       </div>
     </div>

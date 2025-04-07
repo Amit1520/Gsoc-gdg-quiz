@@ -160,9 +160,10 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <h1 className="logo">Quiz App</h1>
+      <h1 className="logo">AI TUITOR</h1>
       <ul className="nav-links">
         <li><Link to="/">Home</Link></li>
+        <li><Link to="/dashboard">Dashboard</Link></li>
         <li><Link to="/quiz">Quiz</Link></li>
         <li><Link to="/leaderboard">Leaderboard</Link></li>
         <li><Link to="/premium">Premium</Link></li> {/* ✅ Added Premium Link */}

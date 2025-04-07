@@ -1,11 +1,16 @@
+.premium-container{
+  background-image: url(bg.jpg);
+  background-size: cover;
+}
 .leaderboard-container {
   text-align: center;
   margin: 60px auto; /* Increased margin for spacing */
   max-width: 1200px; /* Increase the width */
-  background: #1e1e1e;
+  background: transparent;
   padding: 50px; /* Increase padding */
   border-radius: 20px; /* More rounded corners */
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+ 
 }
 
 h2 {

@@ -3,13 +3,17 @@
   max-width: 600px;
   margin: 50px auto;
   padding: 20px;
-  background: linear-gradient(135deg, #1a1a1a, #333);
+  background: transparent;
   box-shadow: 0px 4px 10px rgba(255, 223, 0, 0.3);
   border-radius: 12px;
   text-align: center;
   color: white;
+ }
 
-  
+.App{
+  background-image: url(bg.jpg);
+  background-size: cover;
+  padding: 13.5%;
 }
 
 /* Question Text */
